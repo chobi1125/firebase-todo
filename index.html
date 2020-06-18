@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Firebase Todo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Firebase Todo</h1>
+    </header>
+    <main>
+      <button id="loginBtn" type="button" onclick="loginFC()">ログイン</button>
+      <button id="logoutBtn" type="button" onclick="logoutFC()" disabled>ログアウト</button>
+      <div id="userName"></div>
+      <img id="userPhoto">
+      <div id="main" style="display:none">
+        <input id="addTodo" type="text" autocomplete="off" onkeypress="enter();">
+        <button id="addBtn" type="button" onclick="addFB()">追加</button>
+      </div>
+      <div id="result"></div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="firebase/firebaseConfig.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
